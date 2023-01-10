@@ -14,8 +14,8 @@ public class Task4 {
         map.put("Барсик", cat);
         map.put("Кеша", parrot);
 
-        for (String key: map.keySet()){
-            System.out.println(map.get(key));
+        for (Map.Entry<String, Pet> entry : map.entrySet()){
+            System.out.println(entry.getKey());
         }
     }
 }
